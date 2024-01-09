@@ -2,23 +2,34 @@
 <html lang="en">
   <head>
     <title>Search</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz@6..12&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header>
-      <div><a href="image.html">Image Search</a></div>
+      <div><a href="images.html">Image Search</a></div>
       <div><a href="advanced.html">Advanced Search</a></div>
     </header>
+    <div class="title">
+      <h1>Google</h1>
+    </div>
     <form action="https://www.google.com/search">
-      <input type="text" name="q" />
-      <input type="submit" value="Google Search" />
-      <input
-        type="submit"
-        formaction="https://www.google.com/search"
-        formmethod="get"
-        name="btnI"
-        value="I'm feeling lucky"
-      />
+      <input class="main-input" type="text" name="q" />
+      <div class="button-container">
+        <input type="submit" value="Google Search" />
+        <input
+          type="submit"
+          formaction="https://www.google.com/search"
+          formmethod="get"
+          name="btnI"
+          value="I'm feeling lucky"
+        />
+      </div>
     </form>
   </body>
 </html>
